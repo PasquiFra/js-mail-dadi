@@ -31,6 +31,13 @@
 
     <body>
 
+        <header class="d-flex">
+            <picture class="logo-img">
+                <img src="./img/diamonddice.jpeg" alt="dice-gold">
+            </picture>
+            <h1>DiamondDice.bet</h1>
+        </header>
+
         <section class="m-5" id="login">
             
             <div class="mb-3">
@@ -49,15 +56,19 @@
             
         </section>
 
-        <section class="m-5" id="dices">
+        <section class="m-5 d-none" id="dices">
+            
+            <h2 class="get-value">Tira il dado! <button type="button" class="btn btn-danger" id="dado"><i class="fa-solid fa-dice-six"></i></button></h2>
+            
+
             <h2>Hai ottenuto il valore: </h2>
             <div id="user-value">
-
+                
             </div>
 
             <h2>Il PC ha ottenuto il valore: </h2>
             <div id="pc-value">
-
+                
             </div>
 
             <h1 id="win-user" class="d-none">Hai vinto! <i class="fa-solid fa-champagne-glasses"></i></h1>
