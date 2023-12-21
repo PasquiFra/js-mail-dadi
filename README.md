@@ -35,3 +35,14 @@ Cosa devo controllare esattamente?
 
 ---------- **ESECUZIONE** ----------
 
+1. Genero un numero random da 1 a 6 per l'utente e per il pc 
+    - recupero le variabili
+    - genero il valore per l'utente e per il pc
+    - stampo i valori in pagina
+    - determino il vincitore (o il pareggio) in base al risultato ottenuto 
+
+2. prendo la mail dal form e la valido assicurandomi sia inclusa nella mia array
+    - recupero le variabili
+    - creo l'array inserendo i suoi valori
+    - creo la formula di validazione
+    - restituisco il risultato in pagina

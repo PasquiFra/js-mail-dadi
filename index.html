@@ -31,19 +31,39 @@
 
     <body>
 
-        <h2>Hai ottenuto il valore: </h2>
-        <div id="user-value">
+        <section class="m-5" id="login">
+            
+            <div class="mb-3">
+                <label for="email-address" class="form-label">Effettua il login con il tuo indirizzo mail</label>
+                <input type="email" class="form-control" id="email-address" placeholder="Inserisci qui la tua mail..." value="amantedeidadi@bet.bet">
+                <div class="alert alert-warning d-none" role="alert" id="not-registered">
+                    La mail inserita non è registrata!
+                </div>
+                <div class="alert alert-success d-none" role="alert" id="success">
+                    Login effettuato con successo!
+                </div>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-danger mb-3" id="send-email">Accedi</button>
+            </div>
+            
+        </section>
 
-        </div>
+        <section class="m-5" id="dices">
+            <h2>Hai ottenuto il valore: </h2>
+            <div id="user-value">
 
-        <h2>Il PC ha ottenuto il valore: </h2>
-        <div id="pc-value">
+            </div>
 
-        </div>
+            <h2>Il PC ha ottenuto il valore: </h2>
+            <div id="pc-value">
 
-        <h1 id="win-user" class="d-none">Hai vinto! <i class="fa-solid fa-champagne-glasses"></i></h1>
-        <h1 id="win-pc" class="d-none">Il PC ha vinto! <i class="fa-regular fa-face-sad-cry"></i></h1>
-        <h1 id="no-win" class="d-none">Avete pareggiato <i class="fa-regular fa-handshake"></i></h1>
+            </div>
+
+            <h1 id="win-user" class="d-none">Hai vinto! <i class="fa-solid fa-champagne-glasses"></i></h1>
+            <h1 id="win-pc" class="d-none">Il PC ha vinto! <i class="fa-regular fa-face-sad-cry"></i></h1>
+            <h1 id="no-win" class="d-none">Avete pareggiato <i class="fa-regular fa-handshake"></i></h1>
+        </section>
 
     </body>
 

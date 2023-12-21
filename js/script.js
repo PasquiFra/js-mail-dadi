@@ -1,5 +1,7 @@
 console.log("JS OK");
 
+//! ESERCIZIO 1: TIRO DEI DADI - User VS. PC
+
 //recupero le variabili
 
 const userValue = document.getElementById("user-value");
@@ -35,5 +37,40 @@ if (userRandomVal > pcRandomVal)  {
 } else if (userRandomVal < pcRandomVal) {
     winPc.classList.remove("d-none");
 } else {
-    noWin.classList.remove("d-none")
+    noWin.classList.remove("d-none");
 }
+
+
+//! ESERCIZIO 2: FINTA LOGIN 
+
+//Recupero il valore dal documento
+
+const email = document.getElementById("email-address");
+const button = document.getElementById("send-email");
+
+const notRegistered = document.getElementById("not-registered")
+const success = document.getElementById("success")
+let valid = "";
+
+// creo l'array
+const logEmails = ["amantedeidadi@bet.bet", "dicelover@dice.bet"];
+
+console.log("email inserita: ", email.value, "lista email loggate", logEmails);
+
+button.addEventListener("click", function () {
+    
+    for (let i = 0 ; i < logEmails.length ; i++){
+        if (email.value === logEmails[i]) {
+            valid = "valid!"
+            console.log(logEmails[i], valid)
+        }
+    }
+    
+    if (!valid) {
+        notRegistered.classList.remove("d-none")
+        return
+    } else {
+        success.classList.remove("d-none")
+    }
+    email.value = "";
+})
